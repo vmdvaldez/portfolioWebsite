@@ -1,4 +1,19 @@
-:root {
+:root{
+  --color1 : #191d23;
+  --color2: #57707A;
+  --color3: #7D919C;
+  --color4: #989DAA;
+  --color5: #303b3f;
+  
+  --font-styles: 'DM Serif Text', serif;
+}
+
+
+*{
+  margin: 0px;
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +80,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
