@@ -4,7 +4,7 @@ export default function AboutMeSection(){
     return(
         <section className={styles.about}>
             <div className={styles.intro}>
-                <h1>I am <span className={styles.name}>Vincent Valdez</span></h1>
+                <h1>I am <div className={styles.name}>Vincent Valdez</div></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Interdum consectetur libero id faucibus nisl tincidunt. 

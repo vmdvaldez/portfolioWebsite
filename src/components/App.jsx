@@ -1,6 +1,7 @@
 import '../styles/App.css'
 import Navbar from './Navbar'
 import AboutMeSection from './AboutMe'
+import SkillsSection from './Skills'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar/>
       <AboutMeSection/>
+      <SkillsSection/>
     </>
   )
 }

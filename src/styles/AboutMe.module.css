@@ -1,9 +1,9 @@
 .about{
-    margin-top: calc(var(--navbar-height));
-    padding: 40px 5%;
+    
+    /* padding: var(--section-Hpadding) var(--section-Vpadding); */
 
-    font-family: var(--font-styles);
-    height: calc(100vh - var(--navbar-height));
+    /* font-family: var(--font-styles); */
+    /* height: calc(100vh - var(--navbar-height)); */
 
     display: flex;
     justify-content: center;
@@ -37,11 +37,6 @@
 
 .about h1{
     display: inline;
-    font-size: 3rem;
-}
-
-.about p{
-    font-size: 1.5rem;
 }
 
 .image{

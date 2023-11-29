@@ -6,8 +6,9 @@
   --color5: #303b3f;
   
   --font-styles: 'DM Serif Text', serif;
-  
-  --navbar-height: calc(15*2px + 10*2px);
+  --navbar-height: calc(15px*2 + 10px*2);
+  --section-Vpadding: 40px;
+  --section-Hpadding: 5%;
 
   box-sizing: border-box;
 }
@@ -15,15 +16,41 @@
 
 *{
   margin: 0px;
+  padding: 0px;
 }
 
+
+html,
 body{
   background-color: var(--color4);
   height: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+section {
+  padding-top: var(--navbar-height);
+  height: 100vh;
+
+  scroll-snap-align: start;
+  padding: 0px var(--section-Hpadding);
+  font-family: var(--font-styles);  
+}
+
+section h1{
+  font-size: 3rem;
+}
+
+section h2{
+  font-size: 2rem;
+}
+
+section p{
+  font-size: 1.5rem;
 }
 
 /* :root {
