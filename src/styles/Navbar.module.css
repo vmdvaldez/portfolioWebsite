@@ -1,17 +1,24 @@
 #nav{
     width: 100%;
     position: fixed;
+    top: 0;
+
     color: white;
     font-family: var(--font-styles);
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
 }
 
 
-#nav ul{
-    background-color: var(--color1);
-
+ul{
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     min-width: 50vw;
     gap: 50px;
@@ -21,18 +28,23 @@
 }
 
 #nav ul li{
-    padding: 10px 20px;
+    padding: 15px 20px;
     white-space: nowrap;
 }
 
-#nav ul a:link,
-#nav ul a:visited,
-#nav ul a:active{
-
+a:link,
+a:visited,
+a:active{
     color: white;
     text-decoration: none;
 }
 
 #nav ul a:hover{
     background-color: var(--color5);
+}
+
+.logo {
+    padding: 10px 20px;
+    position: absolute;
+    left: 1px;
 }

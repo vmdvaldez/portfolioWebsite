@@ -6,11 +6,24 @@
   --color5: #303b3f;
   
   --font-styles: 'DM Serif Text', serif;
+  
+  --navbar-height: calc(15*2px + 10*2px);
+
+  box-sizing: border-box;
 }
 
 
 *{
   margin: 0px;
+}
+
+body{
+  background-color: var(--color4);
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* :root {
