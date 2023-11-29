@@ -33,11 +33,10 @@ body{
 }
 
 section {
-  padding-top: var(--navbar-height);
+  padding: var(--navbar-height) var(--section-Hpadding);
   height: 100vh;
 
   scroll-snap-align: start;
-  padding: 0px var(--section-Hpadding);
   font-family: var(--font-styles);  
 }
 

@@ -1,10 +1,4 @@
 .about{
-    
-    /* padding: var(--section-Hpadding) var(--section-Vpadding); */
-
-    /* font-family: var(--font-styles); */
-    /* height: calc(100vh - var(--navbar-height)); */
-
     display: flex;
     justify-content: center;
     align-items: center;
