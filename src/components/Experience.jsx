@@ -13,28 +13,28 @@ function formatDate(date){
 }
 
 function Experience({info}){
-    let id = 0
+    // let id = 0
 
     return(
         <div className={styles.experience}>
-            <div>
-                <h1>{info.title}</h1>
-                <h2>{info.company}</h2>
-                <h3>{`${formatDate(info.start)} to ${formatDate(info.end)}`}</h3>
-                    <div className={styles.techStack}>
-                    <ul>
-                        {info.techStack.map(tech=>{
-                                return <li key={tech}>{tech}</li>
-                            })}         
-                    </ul>
+                <div className={styles.info}>
+                    <h1>{info.title}</h1>
+                    <h2>{info.company}</h2>
+                    <h3>{`${formatDate(info.start)} to ${formatDate(info.end)}`}</h3>
                 </div>
-                <ul>
+                <ul className={styles.techStack}>
+                    {info.techStack.map(tech=>{
+                            return <li key={tech}>{tech}</li>
+                        })}         
+                </ul>
+                {/* TODO: Implement show description on press 
+                    enlarge the title and description on press */}
+                {/* <ul>
                     {info.desc.map(desc=>{
                         id++;
                         return <li key={id}>{desc}</li>
                     })}
-                </ul>
-            </div>
+                </ul> */}
 
         </div>
     )
@@ -67,7 +67,7 @@ export default function ExperienceSection (){
                 "Optimized"
             ],
             techStack: [
-                "Python", "Docker", "Kubernetes", "RedHat OpenShift"
+                "Python", "Docker", "Kubernetes", "OpenShift"
             ]
 
         }
