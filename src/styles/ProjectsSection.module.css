@@ -42,9 +42,13 @@
 }
 
 .description div{
+    text-align: right;
     padding: 5px;
     margin-right: 5px;
-    text-align: right;
+}
+
+.description img {
+    width: 25px;
 }
 
 

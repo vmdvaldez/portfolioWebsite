@@ -6,7 +6,9 @@ function Project({info}){
     const [clicked, setClicked] = useState(false)
     let count = 0
     return (
-        <div className={styles.project} onClick={()=>{setClicked(!clicked)}}>
+        <div className={styles.project} onClick={()=>{
+            setClicked(!clicked)
+            }}>
             <div className={styles.summary}>
                 <h3>{info.name}</h3>
                 <ul>
@@ -15,7 +17,7 @@ function Project({info}){
                     })}
                 </ul>
             </div>
-            {!clicked && 
+            {clicked && 
                 <div className={styles.description}>
                     <ul>
                         {info.desc.map(desc =>{
@@ -23,7 +25,7 @@ function Project({info}){
                             return <li key={count}>{desc}</li>
                         })}
                     </ul>
-                    <div><img src="#"></img></div>
+                    {info.github && <div><a href={info.github} target='_' onClick={(e)=>{e.stopPropagation()}}><img src="../src/assets/github-original.svg"></img></a></div>}
                 </div>
                 }
         </div>
@@ -94,7 +96,7 @@ export default function ProjectsSection(){
         },
         {
             name: "Spotify Project",
-            github: "#",
+            github: "",
             img: "#",
             techStack: ["React", "ExpressJs", "CSS", "HTML"],
             desc: ["OAuth", "API"]
