@@ -1,0 +1,40 @@
+.projects {
+    height: 100%;
+    padding-top: calc(var(--navbar-height) + 8vh);
+    display: grid;
+    /* grid-template-columns: 400px 400px 400px; */
+    grid-auto-rows: max-content;
+    gap: 5px;
+    justify-items: center;
+    }
+
+
+.projects h1{
+    text-align: center;
+}
+
+.project{
+    width: 40%;
+    position: relative;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+}
+
+.project ul{
+    padding: 5px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.project h3{
+    padding: 5px;
+    flex: 1;
+}
+
+.project:hover{
+    background-color: var(--color3);
+}

@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import AboutMeSection from './AboutMe'
 import SkillsSection from './Skills'
 import ExperienceSection from './Experience'
+import ProjectsSection from './ProjectsSection'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <AboutMeSection/>
       <SkillsSection/>
       <ExperienceSection/>
+      <ProjectsSection/>
     </>
   )
 }
