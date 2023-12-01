@@ -4,6 +4,7 @@ import AboutMeSection from './AboutMe'
 import SkillsSection from './Skills'
 import ExperienceSection from './Experience'
 import ProjectsSection from './ProjectsSection'
+import ContactSection from './Contact'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <SkillsSection/>
       <ExperienceSection/>
       <ProjectsSection/>
+      <ContactSection/>
     </>
   )
 }
