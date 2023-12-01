@@ -15,20 +15,38 @@
 
 .project{
     width: 40%;
-    position: relative;
     border: 1px solid black;
+}
 
+.summary {
     display: flex;
     align-items: center;
 }
 
-.project ul{
+.summary ul{
     padding: 5px;
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 20px;
 }
+
+
+.description ul{
+    margin-left: 40px;
+    list-style-type: circle;
+}
+
+.description ul li{
+    margin-bottom: 5px;
+}
+
+.description div{
+    padding: 5px;
+    margin-right: 5px;
+    text-align: right;
+}
+
 
 .project h3{
     padding: 5px;

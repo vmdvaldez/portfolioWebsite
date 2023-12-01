@@ -1,20 +1,38 @@
+import {useState} from 'react'
 import styles from '../styles/ProjectsSection.module.css'
 
+
 function Project({info}){
+    const [clicked, setClicked] = useState(false)
+    let count = 0
     return (
-        <div className={styles.project}>
-            <h3>{info.name}</h3>
-            <ul>
-                {info.techStack.map(tech=>{
-                    return <li key={tech}>{tech}</li>
-                })}
-            </ul>
+        <div className={styles.project} onClick={()=>{setClicked(!clicked)}}>
+            <div className={styles.summary}>
+                <h3>{info.name}</h3>
+                <ul>
+                    {info.techStack.map(tech=>{
+                        return <li key={tech}>{tech}</li>
+                    })}
+                </ul>
+            </div>
+            {!clicked && 
+                <div className={styles.description}>
+                    <ul>
+                        {info.desc.map(desc =>{
+                            count++;
+                            return <li key={count}>{desc}</li>
+                        })}
+                    </ul>
+                    <div><img src="#"></img></div>
+                </div>
+                }
         </div>
     )
 }   
 
-/* TODO: On click slide a Project Information */
-/* TODO: See More Option reloads new projects on render */
+/* TODO: 
+    - Add Priority and Sorting ?
+    */
 
 export default function ProjectsSection(){
     const projects = [

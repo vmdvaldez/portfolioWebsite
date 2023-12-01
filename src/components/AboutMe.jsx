@@ -1,5 +1,8 @@
 import styles from "../styles/AboutMe.module.css"
-/* TODO: Add social media links -- Linkedin Github */
+/* TODO: 
+    - Add social media links -- Linkedin Github 
+    - Add Education Section
+    */
 export default function AboutMeSection(){
     return(
         <section className={styles.about}>
