@@ -6,7 +6,7 @@
     grid-auto-rows: max-content;
     gap: 5px;
     justify-items: center;
-    }
+}
 
 
 .projects h1{
@@ -17,6 +17,7 @@
     width: 40%;
     border: 1px solid black;
 }
+
 
 .summary {
     display: flex;
@@ -30,6 +31,24 @@
     align-items: center;
     gap: 20px;
 }
+
+
+.active{
+    animation: 0.3s linear 0s slide-down;
+    transform-origin: top;
+    animation-direction: alternate;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
 
 
 .description ul{
@@ -48,7 +67,11 @@
 }
 
 .description img {
-    width: 25px;
+    max-width: 30px;
+}
+
+.description img:hover{
+    transform: scale(1.1);
 }
 
 

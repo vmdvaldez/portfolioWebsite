@@ -6,7 +6,7 @@ function Project({info}){
     const [clicked, setClicked] = useState(false)
     let count = 0
     return (
-        <div className={styles.project} onClick={()=>{
+        <div className={ true ? styles.project: `${styles.project} ${styles.active}`} onClick={()=>{
             setClicked(!clicked)
             }}>
             <div className={styles.summary}>
@@ -18,7 +18,7 @@ function Project({info}){
                 </ul>
             </div>
             {clicked && 
-                <div className={styles.description}>
+                <div className={!clicked ? styles.description : `${styles.description} ${styles.active}`} >
                     <ul>
                         {info.desc.map(desc =>{
                             count++;
@@ -53,7 +53,7 @@ export default function ProjectsSection(){
             desc: ["Rotation", "GamePhase"]
         },
         {
-            name: "Pokemon-memory-game",
+            name: "Pokemon Memory Game",
             github: "https://github.com/vmdvaldez/pokemon-memory-game",
             img: "#",
             techStack: ["React", "HTML", "CSS"],
