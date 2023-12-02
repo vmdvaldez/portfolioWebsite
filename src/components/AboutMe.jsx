@@ -3,9 +3,9 @@ import styles from "../styles/AboutMe.module.css"
     - Add social media links -- Linkedin Github 
     - Add Education Section
     */
-export default function AboutMeSection(){
+export default function AboutMeSection({refProp}){
     return(
-        <section className={styles.about}>
+        <section className={styles.about} ref={refProp}>
             <div className={styles.intro}>
                 <h1>I am <div className={styles.name}>Vincent Valdez</div></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

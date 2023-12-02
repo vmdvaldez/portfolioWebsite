@@ -19,7 +19,7 @@ function SkillTab({category, items}){
     )
 }
 
-export default function SkillsSection(){
+export default function SkillsSection({refProp}){
     const skills = {
         "Front-End": [
             {name:'HTML', img:"html5-original.svg"}, 
@@ -47,7 +47,7 @@ export default function SkillsSection(){
     }
 
     return(
-        <section className={styles.skills}>
+        <section className={styles.skills} ref={refProp}>
             {Object.keys(skills).map(category=>{
                 return <SkillTab key={category} category={category} items={skills[category]}/>
             })} 

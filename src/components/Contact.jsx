@@ -1,8 +1,8 @@
 import styles from "../styles/Contact.module.css";
 
-export default function ContactSection(){
+export default function ContactSection({refProp}){
     return(
-        <section className={styles.contactInfo}>
+        <section className={styles.contactInfo} ref={refProp}>
             <h1>Contact Me</h1>
             <form>
                 <div>

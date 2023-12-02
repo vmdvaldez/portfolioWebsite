@@ -40,7 +40,7 @@ function Experience({info}){
     )
 }
 
-export default function ExperienceSection (){
+export default function ExperienceSection ({refProp}){
     const experiences = [
         {
             title: "Software Engineer",
@@ -74,7 +74,7 @@ export default function ExperienceSection (){
     ]
 
     return(
-        <section className={styles.experiences}>
+        <section className={styles.experiences} ref={refProp}>
             {experiences.map(exp=>{
                 return <Experience key={exp.start} info={exp}/>
             })}

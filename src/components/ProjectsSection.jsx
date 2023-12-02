@@ -36,7 +36,7 @@ function Project({info}){
     - Add Priority and Sorting ?
     */
 
-export default function ProjectsSection(){
+export default function ProjectsSection({refProp}){
     const projects = [
         {
             name: "Todo List",
@@ -125,7 +125,7 @@ export default function ProjectsSection(){
         }
     ]
     return(
-        <section className={styles.projects}>
+        <section className={styles.projects} ref={refProp}>
             <h1>Projects</h1>
             {projects.map(proj=>{
                 return <Project info={proj}/>

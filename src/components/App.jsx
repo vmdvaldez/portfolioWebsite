@@ -1,3 +1,6 @@
+import { useRef } from 'react'
+
+
 import '../styles/App.css'
 import Navbar from './Navbar'
 import AboutMeSection from './AboutMe'
@@ -7,15 +10,29 @@ import ProjectsSection from './ProjectsSection'
 import ContactSection from './Contact'
 
 function App() {
+  const aboutMeRef = useRef();
+  const skillsRef = useRef();
+  const experienceRef = useRef();
+  const projectRef = useRef();
+  const contactRef = useRef();
+
+  
+  const refs = {
+      about: aboutMeRef,
+      skills: skillsRef,
+      experience: experienceRef,
+      project: projectRef,
+      contact: contactRef
+    }
 
   return (
     <>
-      <Navbar/>
-      <AboutMeSection/>
-      <SkillsSection/>
-      <ExperienceSection/>
-      <ProjectsSection/>
-      <ContactSection/>
+      <Navbar refs={refs}/>
+      <AboutMeSection refProp={aboutMeRef}/>
+      <SkillsSection refProp={skillsRef}/>
+      <ExperienceSection refProp={experienceRef}/>
+      <ProjectsSection refProp={projectRef}/>
+      <ContactSection refProp={contactRef}/>
     </>
   )
 }
