@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "../styles/Experience.module.css"
 
 const MONTH = ["January", "February", "March", 
@@ -12,11 +13,39 @@ function formatDate(date){
     return `${month} ${day}, ${year}`;
 }
 
-function Experience({info}){
+function ExperienceDetailed({show, info, setShowDetailed}){
+    let id = 0;
+    return(
+        <>
+        {show && <div className={styles.expDetailedOut} onClick={()=>{setShowDetailed(false)}}>
+            <div className={styles.expDetailedIn} onClick={(e)=>{e.stopPropagation()}}>
+                <div className={styles.info}>
+                    <h1>{info.title}</h1>
+                    <h2>{info.company}</h2>
+                    <h3>{`${formatDate(info.start)} to ${formatDate(info.end)}`}</h3>
+                </div>
+                <ul className={styles.techStack}>
+                    {info.techStack.map(tech=>{
+                            return <li key={tech}>{tech}</li>
+                        })}         
+                </ul>
+                <ul>
+                    {info.desc.map(desc=>{
+                        id++;
+                        return <li key={id}>{desc}</li>
+                    })}
+                </ul> 
+            </div>
+        </div> }
+        </>
+    )
+}
+
+function Experience({info, setShowDetailed}){
     // let id = 0
 
     return(
-        <div className={styles.experience}>
+        <div className={styles.experience} onClick={()=> setShowDetailed(true)}>
                 <div className={styles.info}>
                     <h1>{info.title}</h1>
                     <h2>{info.company}</h2>
@@ -35,7 +64,6 @@ function Experience({info}){
                         return <li key={id}>{desc}</li>
                     })}
                 </ul> */}
-
         </div>
     )
 }
@@ -73,10 +101,24 @@ export default function ExperienceSection ({refProp}){
         }
     ]
 
+    const showStateArray = []
+
+    experiences.map(exp=>{
+        showStateArray.push(useState(false));
+    })
+
+    let i = -1;
+
     return(
         <section className={styles.experiences} ref={refProp}>
             {experiences.map(exp=>{
-                return <Experience key={exp.start} info={exp}/>
+                i ++;
+                return (
+                <>
+                    <Experience key={exp.start} info={exp} setShowDetailed={showStateArray[i][1]}/>
+                    <ExperienceDetailed key={exp.end} show={showStateArray[i][0]} info={exp} setShowDetailed={showStateArray[i][1]}/>
+                </>
+                )
             })}
         </section>
     )
