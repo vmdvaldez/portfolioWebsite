@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+.contactInfo h1::before{
+    content: "> ";
+
+}
+
 .contactInfo form{
     width: 50%;
     height: 50%;
@@ -24,9 +29,20 @@ form div{
 form div input{
     height: 25px;
     flex: 1;
+    background-color: var(--opaque-background );
+    border-color: var(--text-color);
+    color: var(--text-color);
 }
 
 form textarea{
     flex: 1;
     resize: none;
+    background-color: var(--opaque-background);
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+form textarea:focus,
+form div input:focus{
+    outline: var(--text-color) solid 2px;
 }

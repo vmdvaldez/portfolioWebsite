@@ -6,6 +6,7 @@
     grid-auto-rows: max-content;
     gap: 5px;
     justify-items: center;
+
 }
 
 
@@ -13,9 +14,14 @@
     text-align: center;
 }
 
+.projects h1::before{
+    content: "> ";
+}
+
+
 .project{
     width: 40%;
-    border: 1px solid black;
+    border: 1px dashed var(--border-color);
 }
 
 
@@ -30,6 +36,18 @@
     list-style-type: none;
     align-items: center;
     gap: 20px;
+}
+
+.summary h3::before{
+    content: "> ";
+}
+
+.summary ul li::before {
+    content: "| ";
+}
+
+.summary ul li::after{
+    content: " |";
 }
 
 
@@ -68,6 +86,7 @@
 
 .description img {
     max-width: 30px;
+    background-color: var(--hover-color);
 }
 
 .description img:hover{
@@ -81,5 +100,5 @@
 }
 
 .project:hover{
-    background-color: var(--color3);
+    background-color: var(--hover-color);
 }

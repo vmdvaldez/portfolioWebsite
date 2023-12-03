@@ -1,9 +1,9 @@
 :root{
-  --color1 : #191d23;
-  --color2: #57707A;
-  --color3: #7D919C;
-  --color4: #989DAA;
-  --color5: #303b3f;
+  --opaque-background : rgba(0, 0, 0, 0.90);;
+  --text-color: #00ff2b;
+  --hover-color: #049c2589;
+  --border-color: #009a22;
+  --background-color: #020202;
   
   --font-styles: 'DM Serif Text', serif;
   --navbar-height: calc(15px*2 + 10px*2);
@@ -38,6 +38,8 @@ section {
 
   scroll-snap-align: start;
   font-family: var(--font-styles);  
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 section h1{

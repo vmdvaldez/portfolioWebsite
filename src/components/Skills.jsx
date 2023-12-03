@@ -10,7 +10,7 @@ function SkillTab({category, items}){
             <ul>
                 {items.map(item=>{
                     return <li key={item.name}>
-                            {item.img ? <img src={ IMAGE_PATH + item.img}/> : <img src="#"/>}
+                            <div className={styles.skillsIMG}>{item.img ? <img src={ IMAGE_PATH + item.img}/> : <img src="#"/>}</div>
                             <div>{item.name}</div>
                             </li>
                 })}

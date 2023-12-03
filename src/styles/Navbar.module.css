@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
 
-    color: white;
+    color: #00ff2b;
     font-family: var(--font-styles);
     align-items: center;
 
@@ -32,15 +32,13 @@
     white-space: nowrap;
 }
 
-a:link,
-a:visited,
 a:active{
     color: white;
     text-decoration: none;
 }
 
 #nav ul a:hover{
-    background-color: var(--color5);
+    background-color: var(--hover-color);
 }
 
 .logo {

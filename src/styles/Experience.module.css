@@ -13,11 +13,13 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+
+    border: 5px double var(--text-color);
 }
 
 
 .experience:hover{
-    background-color: var(--color3);
+    background-color: var(--hover-color);
 }
 
 
@@ -42,4 +44,17 @@
 
 .info h3{
     font-size: 0.8em;
+}
+
+
+.info h2::before,
+.info h3::before{
+    content: "> ";
+}
+
+.techStack li::before{
+    content: "| ";
+}
+.techStack li::after{
+    content: " |";
 }
