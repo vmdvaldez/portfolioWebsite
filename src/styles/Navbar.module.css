@@ -3,14 +3,14 @@
     position: fixed;
     top: 0;
 
-    color: #00ff2b;
+    color: var(--text-color);
     font-family: var(--font-styles);
     align-items: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color1);
+    background-color: var(--opaque-background);
 }
 
 

@@ -7,6 +7,9 @@
     gap: 5px;
     justify-items: center;
 
+    background-image: url("../src/assets/bgpics/hdd.jpg");
+    background-size: contain;
+
 }
 
 
@@ -22,6 +25,7 @@
 .project{
     width: 40%;
     border: 1px dashed var(--border-color);
+    background-color: var(--opaque-background);
 }
 
 

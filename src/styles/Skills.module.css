@@ -8,13 +8,15 @@
     justify-items: center;
 
 
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-image: url("../src/assets/bgpics/kb.jpg");
+    background-size: cover;
     color: var(--text-color);
     
 }
 
 .skillsTab{
-    /* background-color: rgba(0, 0, 0, 0.75); */
+    background-color: var(--opaque-background);
     border: 5px double var(--border-color);
     display: flex;
     flex-direction: column;
