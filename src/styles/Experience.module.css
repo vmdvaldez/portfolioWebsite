@@ -43,6 +43,10 @@
     justify-content: center;
 }
 
+.info h1{
+    font-size: 2.5rem;
+}
+
 .info h2{
     font-size: 1em;
 }
@@ -79,11 +83,12 @@
 
 .expDetailedIn{
     position: relative;
-    height: 80%;
+    /* height: 80%; */
     width: 50%;
 
     padding: 50px;
     background-color: var(--background-color);
+    /* background-color: var(--terminal-color); */
 
     display: flex;
     flex-direction: column;
@@ -92,6 +97,10 @@
 
 .expDetailedIn .info{
     flex: 0;
+    align-items: center;
+    padding: 15px 0px;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
 }
 
 .expDetailedIn .desc{
@@ -110,10 +119,37 @@
 
     gap: 50px;
 
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 
 .expDetailedIn .desc li::before{
     content: "> ";
+}
+
+.expDetailedIn .techStack li{
+    padding: 5px;
+}
+
+.expDetailedIn .info h1,
+.expDetailedIn .info h2,
+.expDetailedIn .info h3 {
+    max-width: fit-content;
+    overflow: hidden;
+    animation: typewriter 2.5s steps(40, end);
+}
+
+.expDetailedIn .info h1::after{
+    content: "|";
+    animation: text-input 0.3s linear alternate infinite;
+}
+
+@keyframes text-input {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to {width: 100%;}
 }

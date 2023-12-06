@@ -77,7 +77,7 @@ export default function ExperienceSection ({refProp}){
             end: new Date(2023, 1),
             desc: [
                 `Provided support in understanding networking concepts. 
-                Debuggign and maintaining code that is related to the Routing Information Base (RIB) component of the router.`,
+                Debugging and maintaining code that is related to the Routing Information Base (RIB) component of the router.`,
                 "Configured a variety of network topologies with various dynamic protocols for reproducing issues and feature testing.",
                 "Implemented routing APIs and unit tests to support new features within the routing code base.",
                 "Created a RIB API that notifies its clients that a routing protocol has been created. Also provided, an API which queries existing routing protocol in the router.",
