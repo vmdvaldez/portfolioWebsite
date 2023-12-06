@@ -29,7 +29,7 @@ function ExperienceDetailed({show, info, setShowDetailed}){
                             return <li key={tech}>{tech}</li>
                         })}         
                 </ul>
-                <ul>
+                <ul className={styles.desc}>
                     {info.desc.map(desc=>{
                         id++;
                         return <li key={id}>{desc}</li>
@@ -76,12 +76,15 @@ export default function ExperienceSection ({refProp}){
             start: new Date(2021, 5),
             end: new Date(2023, 1),
             desc: [
-                "Provided",
-                "Configured",
-                "Implemented"
+                `Provided support in understanding networking concepts. 
+                Debuggign and maintaining code that is related to the Routing Information Base (RIB) component of the router.`,
+                "Configured a variety of network topologies with various dynamic protocols for reproducing issues and feature testing.",
+                "Implemented routing APIs and unit tests to support new features within the routing code base.",
+                "Created a RIB API that notifies its clients that a routing protocol has been created. Also provided, an API which queries existing routing protocol in the router.",
+                "Modernized existing network automated test written in TCL to an existing python framework to allow for scalable, maintanable, and reusable tests."
             ],
             techStack: [
-                "C", "C++", "Python", "Networking"
+                "C", "C++", "Python", "IoT", "Networking"
             ]
         },
         {
@@ -90,9 +93,10 @@ export default function ExperienceSection ({refProp}){
             start: new Date(2019, 4),
             end: new Date(2020, 7),
             desc: [
-                "Utilized",
-                "Characterized",
-                "Optimized"
+                "Utilized, converted, and created a combination of various workloads to stress test a specific system resource and setting upcloud clusters and services such as Red Hat OpenShift, IBM WMLA, and IBM Cloud Private.",
+                "Characterized various workloads, such as AcmeAir and NVIDIA’s object detection code, by consistently producing detaileddata points that maps workload combinations, workload configurations, and resource utilization.",
+                "Optimized workload configurations to produce the most optimal resource consumption. The Nvidia’s object detection wasfurther optimized to allow the scaling from 2 pods per GPU to 5 pods per GPU increasing the GPU resource usage of thesystem from 50 to 95%.",
+                "Analyzed the performance of different cloud software under workload stress to exploit cloud software/system bottlenecksand provide solutions to cloud software/system bottlenecks. By changing the request scheduling algorithm of a cloudinfrastructure which was the bottleneck, we were able to significantly increase the overall throughput of the workloads aswell as increase resource usage consumptions."
             ],
             techStack: [
                 "Python", "Docker", "Kubernetes", "OpenShift"
