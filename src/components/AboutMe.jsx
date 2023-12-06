@@ -5,7 +5,7 @@ import styles from "../styles/AboutMe.module.css"
     */
 export default function AboutMeSection({refProp}){
     return(
-        <section className={styles.about} ref={refProp}>
+        <section className={styles.about} ref={refProp} id="AboutMe">
             <div className={styles.intro}>
                 <h1>I am <div className={styles.name}>Vincent Valdez</div></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

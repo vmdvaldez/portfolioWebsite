@@ -125,7 +125,7 @@ export default function ProjectsSection({refProp}){
         }
     ]
     return(
-        <section className={styles.projects} ref={refProp}>
+        <section className={styles.projects} ref={refProp} id="Projects">
             <h1>Projects</h1>
             {projects.map(proj=>{
                 return <Project info={proj}/>

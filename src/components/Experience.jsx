@@ -114,7 +114,7 @@ export default function ExperienceSection ({refProp}){
     let i = -1;
 
     return(
-        <section className={styles.experiences} ref={refProp}>
+        <section className={styles.experiences} ref={refProp} id="Experiences">
             {experiences.map(exp=>{
                 i ++;
                 return (
