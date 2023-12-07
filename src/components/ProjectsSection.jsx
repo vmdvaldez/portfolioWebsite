@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState, useReducer, useRef} from 'react'
 import styles from '../styles/ProjectsSection.module.css'
 
 
@@ -124,9 +124,37 @@ export default function ProjectsSection({refProp}){
             desc: ["OAuth", "API"]
         }
     ]
+
+    const [inView, setinView] = useState(false);
+
+    useEffect(()=>{
+        if(refProp.current == null) return;
+
+        const options ={
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.7,
+        }
+
+        const observer = new IntersectionObserver((elem)=>{
+            elem.forEach(e=>{
+                if(!e.isIntersecting){
+                    setinView(false);
+                    return;
+                } 
+                setinView(true)
+            })
+        }, options)
+
+        observer.observe(refProp.current);
+        return ()=>{if(refProp.current) observer.unobserve(refProp.current)}
+    },[refProp])
+
+
+
     return(
         <section className={styles.projects} ref={refProp} id="Projects">
-            <h1>Projects</h1>
+            {inView && <h1>Projects</h1>}
             {projects.map(proj=>{
                 return <Project info={proj}/>
             })}

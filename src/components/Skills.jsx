@@ -48,9 +48,13 @@ export default function SkillsSection({refProp}){
 
     return(
         <section className={styles.skills} ref={refProp} id="Skills">
-            {Object.keys(skills).map(category=>{
-                return <SkillTab key={category} category={category} items={skills[category]}/>
-            })} 
+            <h1>SKILLS</h1>
+            <div className={styles.skillsList}>
+                {Object.keys(skills).map(category=>{
+                    return <SkillTab key={category} category={category} items={skills[category]}/>
+                })} 
+            </div>
+
         </section>
     )
 }

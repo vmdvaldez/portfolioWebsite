@@ -1,6 +1,5 @@
 .projects {
-    height: 100%;
-    padding-top: calc(var(--navbar-height) + 8vh);
+    padding-top: calc(var(--navbar-height) + 10vh);
     display: grid;
     /* grid-template-columns: 400px 400px 400px; */
     grid-auto-rows: max-content;
@@ -14,13 +13,30 @@
 
 
 .projects h1{
-    text-align: center;
+    display: flex;
+    max-width: max-content;
+    overflow: hidden;
+    animation: typewriter 5s steps(40, end);
+}
+
+@keyframes text-input {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to {width: 100%;}
 }
 
 .projects h1::before{
     content: "> ";
 }
 
+.projects h1::after{
+    content: "|";
+    animation: text-input 0.3s linear alternate infinite;
+}
 
 .project{
     width: 40%;

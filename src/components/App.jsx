@@ -37,7 +37,7 @@ function App() {
     const cb = (ent)=>{
       ent.forEach(e=>{
         if(!e.isIntersecting) return
-        const DIRNAME ="root@vmdvaldez/"
+        const DIRNAME ="root@vmdvaldez:~/"
         setDir(DIRNAME + e.target.id);
       })
     }
