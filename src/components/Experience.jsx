@@ -115,15 +115,19 @@ export default function ExperienceSection ({refProp}){
 
     return(
         <section className={styles.experiences} ref={refProp} id="Experiences">
-            {experiences.map(exp=>{
-                i ++;
-                return (
-                <>
-                    <Experience key={exp.start} info={exp} setShowDetailed={showStateArray[i][1]}/>
-                    <ExperienceDetailed key={exp.end} show={showStateArray[i][0]} info={exp} setShowDetailed={showStateArray[i][1]}/>
-                </>
-                )
-            })}
+            <h1>EXPERIENCE</h1>
+            <div className={styles.experiencesList}>
+                {experiences.map(exp=>{
+                    i ++;
+                    return (
+                    <>
+                        <Experience key={exp.start} info={exp} setShowDetailed={showStateArray[i][1]}/>
+                        <ExperienceDetailed key={exp.end} show={showStateArray[i][0]} info={exp} setShowDetailed={showStateArray[i][1]}/>
+                    </>
+                    )
+                })}
+            </div>
+
         </section>
     )
 }

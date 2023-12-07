@@ -1,5 +1,7 @@
 .skills{
     display: flex;
+    background-image: url("../src/assets/bgpics/kb.jpg");
+    background-size: cover;
 }
 
 .skills h1{
@@ -33,8 +35,8 @@
     justify-items: center;
 
 
-    background-image: url("../src/assets/bgpics/kb.jpg");
-    background-size: cover;
+    /* background-image: url("../src/assets/bgpics/kb.jpg");
+    background-size: cover; */
     color: var(--text-color);
     
     flex: 1;
