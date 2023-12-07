@@ -3,9 +3,9 @@
     justify-content: center;
     align-items: center;
 
-    background-image: url("../src/assets/bgpics/sphere.gif");
+    background-image: url("../src/assets/bgpics/globebg.jpg");
     background-size: cover;
-    color: white;
+    color: var(--text-color);
 }
 
 

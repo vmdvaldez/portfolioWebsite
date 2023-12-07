@@ -49,9 +49,9 @@ export default function AboutMeSection({refProp}){
                     Tortor at risus viverra adipiscing at. Ornare lectus sit amet est.
                 </p>
             </div>
-            <div className={styles.image}>
+            {/* <div className={styles.image}>
 
-            </div>
+            </div> */}
         </section>
     )
 }
