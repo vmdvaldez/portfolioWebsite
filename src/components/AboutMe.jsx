@@ -36,17 +36,16 @@ export default function AboutMeSection({refProp}){
         <section className={styles.about} ref={refProp} id="AboutMe">
             <div className={styles.intro}>
                 <h1>I am {inView && <div className={styles.name}>Vincent Valdez</div>}</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Interdum consectetur libero id faucibus nisl tincidunt. 
-                    In nisl nisi scelerisque eu ultrices vitae auctor. 
-                    Volutpat odio facilisis mauris sit. Tellus elementum sagittis vitae et leo.
-                    Aenean euismod elementum nisi quis eleifend quam adipiscing. 
-                    Bibendum est ultricies integer quis auctor elit sed vulputate mi. 
-                    Enim ut sem viverra aliquet eget sit amet. 
-                    Nec ullamcorper sit amet risus nullam eget felis eget nunc. 
-                    Malesuada fames ac turpis egestas integer. 
-                    Tortor at risus viverra adipiscing at. Ornare lectus sit amet est.
+                <p> A 2021 graduate from University Of Toronto, Major in Computer Engineering. 
+                    In my undergraduate years I learned the fundamental concepts of computer programming and architecture. 
+                    It was mostly focused on C and C++ language, systems and backend programming. 
+                    After my 3rd year, I worked at IBM for a 16-month internship where I analyzed system performances 
+                    and was introduced to cloud technologies. Post graduation, I worked at Cisco where I was able to take a
+                    dive into the world of routers and network programming. Since then, I have realized that I have only been working
+                    on the backend of things and decided to expose myself to front-end development. I decided that Web Development would be 
+                    a great path to learning front-end so I took the time to go through the "Odin Project" online course. With my background in 
+                    backend development and newly learned frontend development skill, I am pursuing to be a Full Stack Developer.
+                   
                 </p>
             </div>
             {/* <div className={styles.image}>
