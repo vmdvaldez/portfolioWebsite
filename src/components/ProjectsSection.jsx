@@ -41,6 +41,7 @@ function Project({info}){
 export default function ProjectsSection({refProp}){
     const projects = [
         {
+            index: 6,
             name: "Todo List",
             github: "https://github.com/vmdvaldez/todo-list",
             img: "#",
@@ -50,6 +51,7 @@ export default function ProjectsSection({refProp}){
                 "Utilize Browser's Local Storage to keep state"]
         },
         {
+            index: 3,
             name: "Battleship",
             github: "https://github.com/vmdvaldez/battleship",
             img: "#",
@@ -62,6 +64,7 @@ export default function ProjectsSection({refProp}){
             ]
         },
         {
+            index: 5,
             name: "Pokemon Memory Game",
             github: "https://github.com/vmdvaldez/pokemon-memory-game",
             img: "#",
@@ -70,6 +73,7 @@ export default function ProjectsSection({refProp}){
                 "Utilize pokeapi to choose which pokemons to display via React hooks"]
         },
         {
+            index: 4,
             name: "Clothing Store Website",
             github: "https://github.com/vmdvaldez/shopping-website",
             img: "#",
@@ -78,6 +82,7 @@ export default function ProjectsSection({refProp}){
                 "Utilize fakestore api to query for different products to display"]
         },
         {
+            index: 0,
             name: "Distributed KV Store",
             github: "",
             img: "https://github.com/lucashuang97/ece419/tree/M4signtls",
@@ -89,6 +94,7 @@ export default function ProjectsSection({refProp}){
                 "Built a secure connection between clients and servers using a Public Key Infrastructure (PKI) and Secure Socket Layer (SSL) connections"]
         },
         {
+            index: 1,
             name: "Cloud Workload Generator",
             github: "https://github.com/bvccvb/Capstone/tree/main",
             img: "#",
@@ -100,6 +106,7 @@ export default function ProjectsSection({refProp}){
             ]
         },
         {
+            index: 2,
             name: "Weather Image Classification",
             github: "https://github.com/vmdvaldez/WeatherImageClassification",
             img: "#",
@@ -109,6 +116,7 @@ export default function ProjectsSection({refProp}){
                 ]
         },
         {
+            index: 7,
             name: "Chat WebServer",
             github: "https://github.com/vmdvaldez/ECE361-webserver/tree/master",
             img: "#",
@@ -119,6 +127,7 @@ export default function ProjectsSection({refProp}){
                 ]
         },
         {
+            index: 8,
             name: "Spotify Project",
             github: "",
             img: "#",
@@ -126,6 +135,12 @@ export default function ProjectsSection({refProp}){
             desc: ["OAuth", "API"]
         }
     ]
+
+
+    projects.sort((a, b)=>{
+        if(a.index < b.index) return -1;
+        else return 1;
+    })
 
     const [inView, setinView] = useState(false);
 
