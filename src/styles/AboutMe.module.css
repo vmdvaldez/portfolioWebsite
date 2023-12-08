@@ -5,6 +5,7 @@
 
     background-image: url(/src/assets/bgpics/globebg.jpg);
     background-size: cover;
+    background-position: center;
     color: var(--text-color);
 }
 

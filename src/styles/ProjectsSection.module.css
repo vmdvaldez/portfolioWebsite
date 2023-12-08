@@ -6,7 +6,8 @@
     justify-items: center;
 
     background-image: url(/src/assets/bgpics/hdd.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 
 }
 
