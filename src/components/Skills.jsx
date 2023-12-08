@@ -13,6 +13,8 @@ import dockerLogo from "../assets/skillsicon/docker-original.svg";
 import kubeLogo from "../assets/skillsicon/kubernetes-plain.svg";
 import matlabLogo from "../assets/skillsicon/matlab-original.svg";
 import psLogo from "../assets/skillsicon/photoshop-plain.svg";
+import openShiftLogo from "../assets/skillsicon/openshift-icon.svg";
+import wiresharkLogo from "../assets/skillsicon/wireshark.svg";
 
 
 function SkillTab({category, items}){
@@ -51,11 +53,11 @@ export default function SkillsSection({refProp}){
         "Cloud Tech": [
             {name:"Docker", img:dockerLogo}, 
             {name:"Kubernetes", img:kubeLogo}, 
-            {name:"OpenShift", img:".svg"}
+            {name:"OpenShift", img:openShiftLogo}
         ],
         "Other": [
             {name:"MATLAB", img:matlabLogo}, 
-            {name:"Wireshark", img:".svg"}, 
+            {name:"Wireshark", img:wiresharkLogo}, 
             {name:"Photoshop", img:psLogo}
         ]
     }
