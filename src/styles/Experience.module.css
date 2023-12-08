@@ -1,6 +1,6 @@
 .experiences{
     display: flex;
-    background-image: url("../src/assets/bgpics/tree.jpg");
+    background-image: url(/src/assets/bgpics/tree.jpg);
     background-size: cover;
 }
 

@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 
 
-import '../styles/App.css'
-import Navbar from './Navbar'
-import AboutMeSection from './AboutMe'
-import SkillsSection from './Skills'
-import ExperienceSection from './Experience'
-import ProjectsSection from './ProjectsSection'
-import ContactSection from './Contact'
+import Navbar from './components/Navbar'
+import AboutMeSection from './components/AboutMe'
+import SkillsSection from './components/Skills'
+import ExperienceSection from './components/Experience'
+import ProjectsSection from './components/ProjectsSection'
+import ContactSection from './components/Contact'
 
 function App() {
   const aboutMeRef = useRef(null);

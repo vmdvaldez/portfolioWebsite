@@ -1,8 +1,22 @@
 import styles from "../styles/Skills.module.css"
 
-const IMAGE_PATH = "../src/assets/skillsicon/"
+import html5Logo from "../assets/skillsicon/html5-original.svg";
+import css3Logo from "../assets/skillsicon/css3-original.svg";
+import jsLogo from "../assets/skillsicon/javascript-original.svg";
+import reactLogo from "../assets/skillsicon/react-original.svg";
+import cLogo from "../assets/skillsicon/c-original.svg";
+import cppLogo from "../assets/skillsicon/cplusplus-original.svg";
+import javaLogo from "../assets/skillsicon/java-original.svg";
+import pythonLogo from "../assets/skillsicon/python-original.svg";
+import nodeJSLogo from "../assets/skillsicon/nodejs-original.svg";
+import dockerLogo from "../assets/skillsicon/docker-original.svg";
+import kubeLogo from "../assets/skillsicon/kubernetes-plain.svg";
+import matlabLogo from "../assets/skillsicon/matlab-original.svg";
+import psLogo from "../assets/skillsicon/photoshop-plain.svg";
+
 
 function SkillTab({category, items}){
+    // const IMAGE_PATH = "/skillsicon/";
 
     return(
         <div className={styles.skillsTab}>
@@ -10,7 +24,7 @@ function SkillTab({category, items}){
             <ul>
                 {items.map(item=>{
                     return <li key={item.name}>
-                            <div className={styles.skillsIMG}>{item.img ? <img src={ IMAGE_PATH + item.img}/> : <img src="#"/>}</div>
+                            <div className={styles.skillsIMG}>{item.img ? <img src={item.img}/> : <img src="#"/>}</div>
                             <div>{item.name}</div>
                             </li>
                 })}
@@ -22,27 +36,27 @@ function SkillTab({category, items}){
 export default function SkillsSection({refProp}){
     const skills = {
         "Front-End": [
-            {name:'HTML', img:"html5-original.svg"}, 
-            {name:'CSS', img:"css3-original.svg"}, 
-            {name:'JavaScript', img:"javascript-original.svg"}, 
-            {name:'React', img:"react-original.svg"}
+            {name:'HTML', img: html5Logo}, 
+            {name:'CSS', img: css3Logo}, 
+            {name:'JavaScript', img:jsLogo}, 
+            {name:'React', img: reactLogo}
         ],
         "Back-End": [
-            {name:"C", img:"c-original.svg"}, 
-            {name:"C++", img:"cplusplus-original.svg"}, 
-            {name:"Java", img:"java-original.svg"}, 
-            {name:"Python", img:"python-original.svg"}, 
-            {name:"NodeJs", img:"nodejs-original.svg"}
+            {name:"C", img: cLogo}, 
+            {name:"C++", img:cppLogo}, 
+            {name:"Java", img:javaLogo}, 
+            {name:"Python", img:pythonLogo}, 
+            {name:"NodeJs", img:nodeJSLogo}
         ],
         "Cloud Tech": [
-            {name:"Docker", img:"docker-original.svg"}, 
-            {name:"Kubernetes", img:"kubernetes-plain.svg"}, 
+            {name:"Docker", img:dockerLogo}, 
+            {name:"Kubernetes", img:kubeLogo}, 
             {name:"OpenShift", img:".svg"}
         ],
         "Other": [
-            {name:"MATLAB", img:"matlab-original.svg"}, 
+            {name:"MATLAB", img:matlabLogo}, 
             {name:"Wireshark", img:".svg"}, 
-            {name:"Photoshop", img:"photoshop-plain.svg"}
+            {name:"Photoshop", img:psLogo}
         ]
     }
 

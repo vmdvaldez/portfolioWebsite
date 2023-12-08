@@ -1,6 +1,8 @@
 import {useEffect, useState, useReducer, useRef} from 'react'
 import styles from '../styles/ProjectsSection.module.css'
 
+import GithubLogo from '../../src/assets/github-original.svg';
+
 
 function Project({info}){
     const [clicked, setClicked] = useState(false)
@@ -25,7 +27,7 @@ function Project({info}){
                             return <li key={count}>{desc}</li>
                         })}
                     </ul>
-                    {info.github && <div><a href={info.github} target='_' onClick={(e)=>{e.stopPropagation()}}><img src="../src/assets/github-original.svg"></img></a></div>}
+                    {info.github && <div><a href={info.github} target='_' onClick={(e)=>{e.stopPropagation()}}><img src={GithubLogo}></img></a></div>}
                 </div>
                 }
         </div>

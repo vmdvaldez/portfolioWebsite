@@ -1,6 +1,6 @@
 .skills{
     display: flex;
-    background-image: url("../src/assets/bgpics/kb.jpg");
+    background-image: url(/src/assets/bgpics/kb.jpg);
     background-size: cover;
 }
 
@@ -35,8 +35,6 @@
     justify-items: center;
 
 
-    /* background-image: url("../src/assets/bgpics/kb.jpg");
-    background-size: cover; */
     color: var(--text-color);
     
     flex: 1;
@@ -60,8 +58,6 @@
 }
 
 .skillsTab li{
-    /* height: 50px; */
-    /* width: 50px; */
     font-size: 2rem;
     margin: 5px;
     display: flex;
@@ -78,7 +74,6 @@
 .skillsIMG img{
     max-height: 100%;
     max-width: 100%;
-    /* mix-blend-mode: multiply; */
 }
 
 .skillsIMG{

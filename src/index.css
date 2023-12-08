@@ -1,0 +1,56 @@
+:root{
+  --opaque-background : rgba(0, 0, 0, 0.90);;
+  --text-color: #00ff2b;
+  --hover-color: #049c2589;
+  --border-color: #009a22;
+  --background-color: #020202;
+  --terminal-sub-color: #ffffff04;
+  
+  --font-styles: 'DM Serif Text', serif;
+  --navbar-height: calc(15px*2 + 10px*2);
+  --section-Vpadding: 40px;
+  --section-Hpadding: 5%;
+
+  box-sizing: border-box;
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+html,
+body{
+  background-color: var(--color4);
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  padding: var(--navbar-height) var(--section-Hpadding);
+  height: 100vh;
+
+  scroll-snap-align: start;
+  font-family: var(--font-styles);  
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+section h1{
+  font-size: 3rem;
+}
+
+section h2{
+  font-size: 2rem;
+}
+
+section p{
+  font-size: 1.5rem;
+}

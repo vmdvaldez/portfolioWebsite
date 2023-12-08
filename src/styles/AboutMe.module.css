@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
 
-    background-image: url("../src/assets/bgpics/globebg.jpg");
+    background-image: url(/src/assets/bgpics/globebg.jpg);
     background-size: cover;
     color: var(--text-color);
 }
