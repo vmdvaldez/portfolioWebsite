@@ -46,3 +46,27 @@ form textarea:focus,
 form div input:focus{
     outline: var(--text-color) solid 2px;
 }
+
+form button {
+    font-style: var(--font-styles);
+    color: var(--text-color);
+    background-color: var(--opaque-background);
+
+    cursor: pointer;
+
+    border: 2px double var(--border-color);
+}
+
+form button:hover{
+    background-color: var(--hover-color);
+}
+
+
+form button>div{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+form button div:hover{
+    transform: scale(1.1);
+}
