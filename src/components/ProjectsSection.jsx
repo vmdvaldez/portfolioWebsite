@@ -2,6 +2,7 @@ import {useEffect, useState, useReducer, useRef} from 'react'
 import styles from '../styles/ProjectsSection.module.css'
 
 import GithubLogo from '../../src/assets/github-original.svg';
+import PreviewLogo from '../../src/assets/preview-logo.svg';
 
 
 function Project({info}){
@@ -27,7 +28,10 @@ function Project({info}){
                             return <li key={count}>{desc}</li>
                         })}
                     </ul>
-                    {info.github && <div><a href={info.github} target='_' onClick={(e)=>{e.stopPropagation()}}><img src={GithubLogo}></img></a></div>}
+                    <div className={styles.links}>
+                        {info.preview && <div><a href={info.preview} target='_' onClick={(e)=>{e.stopPropagation();}}><img src={PreviewLogo}></img></a></div>}
+                        {info.github && <div><a href={info.github} target='_' onClick={(e)=>{e.stopPropagation()}}><img src={GithubLogo}></img></a></div>}
+                    </div>
                 </div>
                 }
         </div>
@@ -44,6 +48,7 @@ export default function ProjectsSection({refProp}){
             index: 6,
             name: "Todo List",
             github: "https://github.com/vmdvaldez/todo-list",
+            preview: "https://todo-list-blbvwyg8a-vmdvaldezs-projects.vercel.app/",
             img: "#",
             techStack: ["JavaScript", "HTML", "CSS"],
             desc:[
@@ -54,6 +59,7 @@ export default function ProjectsSection({refProp}){
             index: 3,
             name: "Battleship",
             github: "https://github.com/vmdvaldez/battleship",
+            preview: "https://battleship-chi-steel.vercel.app/",
             img: "#",
             techStack: ["JavaScript", "HTML", "CSS"],
             desc: [
@@ -67,6 +73,7 @@ export default function ProjectsSection({refProp}){
             index: 5,
             name: "Pokemon Memory Game",
             github: "https://github.com/vmdvaldez/pokemon-memory-game",
+            preview: "https://vercel.com/vmdvaldezs-projects/pokemon-memory-game/HFLGWgdrE248jdAnfxMjydQgebg9",
             img: "#",
             techStack: ["React", "HTML", "CSS"],
             desc: ["Create a memory game using Pokemon Characters. User must go through all options without pressing the choosing the same unit", 
@@ -76,6 +83,7 @@ export default function ProjectsSection({refProp}){
             index: 4,
             name: "Clothing Store Website",
             github: "https://github.com/vmdvaldez/shopping-website",
+            preview: "https://shopping-website-gneat57g6-vmdvaldezs-projects.vercel.app/",
             img: "#",
             techStack: ["React", "HTML", "CSS"],
             desc: ["Create a mock clothing store that implements adding/removing to cart and checkout",
