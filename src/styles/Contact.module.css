@@ -21,12 +21,12 @@
 
 }
 
-form div{
+.inputs{
     display: flex;
     gap: 5px;
 }
 
-form div input{
+.inputs input{
     height: 25px;
     flex: 1;
     background-color: var(--opaque-background );
@@ -43,18 +43,24 @@ form textarea{
 }
 
 form textarea:focus,
-form div input:focus{
+.inputs input:focus{
     outline: var(--text-color) solid 2px;
 }
 
-form button {
-    font-style: var(--font-styles);
+form button,
+.submitted {
+    font-family: var(--font-styles);
     color: var(--text-color);
     background-color: var(--opaque-background);
 
     cursor: pointer;
-
     border: 2px double var(--border-color);
+}
+
+.submitted{
+    pointer-events: none;
+    text-align: center;
+    border: none;
 }
 
 form button:hover{
@@ -63,9 +69,7 @@ form button:hover{
 
 
 form button>div{
-    display: block;
-    width: 100%;
-    text-align: center;
+    font-family: var(--font-styles);
 }
 form button div:hover{
     transform: scale(1.1);
