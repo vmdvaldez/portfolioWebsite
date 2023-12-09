@@ -8,7 +8,7 @@ export default function ContactSection({refProp}){
             const email = e.target.elements.email.value;
             const name = e.target.elements.name.value;
             const message = e.target.elements.message.value;
-            fetch("https://formsubmit.co/ajax/vmdvaldez@hotmail.com", {
+            fetch("https://formsubmit.co/ajax/ff9c9212d7da9d10bc0cf6d8c8488871", {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
