@@ -73,7 +73,7 @@ export default function ProjectsSection({refProp}){
             index: 5,
             name: "Pokemon Memory Game",
             github: "https://github.com/vmdvaldez/pokemon-memory-game",
-            preview: "https://vercel.com/vmdvaldezs-projects/pokemon-memory-game/HFLGWgdrE248jdAnfxMjydQgebg9",
+            preview: "https://pokemon-memory-game-ici16fi7m-vmdvaldezs-projects.vercel.app/",
             img: "#",
             techStack: ["React", "HTML", "CSS"],
             desc: ["Create a memory game using Pokemon Characters. User must go through all options without pressing the choosing the same unit", 
