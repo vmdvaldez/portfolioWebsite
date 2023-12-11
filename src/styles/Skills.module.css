@@ -39,6 +39,7 @@
     color: var(--text-color);
     
     flex: 1;
+    gap: 10px;
 }
 
 .skillsTab{
@@ -50,7 +51,7 @@
 }
 
 .skillsTab h2{
-    font-size: 4rem;
+    font-size: 3rem;
     align-self: center;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .skillsTab li{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 5px;
     display: flex;
     align-items: center;
