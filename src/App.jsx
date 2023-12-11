@@ -61,7 +61,7 @@ function App() {
       <SkillsSection refProp={skillsRef}/>
       <ExperienceSection refProp={experienceRef}/>
       <ProjectsSection refProp={projectRef}/>
-      {/* <ContactSection refProp={contactRef}/> */}
+      <ContactSection refProp={contactRef}/>
     </>
   )
 }

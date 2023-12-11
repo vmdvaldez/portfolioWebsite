@@ -46,3 +46,32 @@ form textarea:focus,
 form div input:focus{
     outline: var(--text-color) solid 2px;
 }
+
+@media (max-width: 800px) {
+
+    .contactInfo{
+        align-items: flex-start;
+    }
+
+    .contactInfo h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contactInfo form{
+        width: 100%;
+    }
+
+    .contactInfo form div{
+        display: initial;
+    }
+
+    .contactInfo form div input{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactInfo form textarea{
+        width: 100%;
+    }
+}
