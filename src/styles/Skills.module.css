@@ -82,4 +82,29 @@
     width: 50px;
 }
 
+@media (max-width: 800px) {
+    .skillsList{
+        justify-items: initial;
+        gap: 2px;
+    }
 
+    .skills {
+        font-size: 1rem;
+    }
+
+    .skills h1{
+        font-size: 11vw;
+    }
+
+    .skillsTab h2{
+        font-size: calc(1rem + 5vw * 0.3);
+    }
+
+    .skillsTab ul li div{
+        font-size: calc(0.80rem + 5vw * 0.3);
+    }
+    .skillsIMG{
+        height: 25px;
+        width: 25px;
+    }
+}
