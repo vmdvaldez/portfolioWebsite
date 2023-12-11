@@ -25,7 +25,6 @@
     to {opacity: 100%;}
 }
 
-
 .experiencesList{
     flex: 1;
     display: grid;
@@ -183,7 +182,6 @@
     to {width: 100%;}
 }
 
-
 @media (max-width: 1100px) {
     .experiences{
         flex-direction: column;
@@ -263,4 +261,11 @@
     .expDetailedIn .desc {
         font-size: 0.7rem;
     }
+
+    /*Animation is not the same in chrome dev vs mobile*/
+    .expDetailedIn .info h1,
+    .expDetailedIn .info h2,
+    .expDetailedIn .info h3 {
+    animation: none;
+}
 }
