@@ -39,7 +39,7 @@
 }
 
 .project{
-    width: 40%;
+    width: 50vw;
     border: 1px dashed var(--border-color);
     background-color: var(--opaque-background);
 }
@@ -121,4 +121,26 @@
 
 .project:hover{
     background-color: var(--hover-color);
+}
+
+@media (max-width: 800px) {
+    .projects h1{
+        font-size: calc(1.5rem + 5vw*0.5);
+    }
+
+    .project {
+        width: 85vw;
+    }
+
+    .summary h3{
+        font-size: 0.7rem;
+    }
+
+    .summary ul{
+        font-size: 0.6rem;
+    }
+
+    .description ul li{
+        font-size: 0.65rem;
+    }
 }

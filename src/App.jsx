@@ -60,7 +60,7 @@ function App() {
       <AboutMeSection refProp={aboutMeRef}/>
       <SkillsSection refProp={skillsRef}/>
       <ExperienceSection refProp={experienceRef}/>
-      {/* <ProjectsSection refProp={projectRef}/> */}
+      <ProjectsSection refProp={projectRef}/>
       {/* <ContactSection refProp={contactRef}/> */}
     </>
   )
