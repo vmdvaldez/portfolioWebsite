@@ -9,7 +9,7 @@ function Project({info}){
     const [clicked, setClicked] = useState(false)
     let count = 0
     return (
-        <div className={ true ? styles.project: `${styles.project} ${styles.active}`} onClick={()=>{
+        <div className={styles.project} onClick={()=>{
             setClicked(!clicked)
             }}>
             <div className={styles.summary}>

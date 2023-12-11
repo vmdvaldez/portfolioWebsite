@@ -11,6 +11,8 @@
     justify-content: center;
     align-items: center;
     background-color: var(--opaque-background);
+
+    font-size: 1rem;
 }
 
 
@@ -20,8 +22,8 @@
     justify-content: center;
     align-items: center;
 
-    min-width: 50vw;
-    gap: 50px;
+    /* min-width: 50vw; */
+    gap: 5px;
     padding: 0px;
     margin: 0;
     list-style-type: none;
@@ -45,4 +47,29 @@ a:active{
     padding: 10px 20px;
     position: absolute;
     left: 1px;
+}
+
+@media (max-width: 750px) {
+    .logo{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px ) {
+    #nav {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #nav ul{
+        gap: 5px;
+        font-size: 0.80em;
+    }
+
+    #nav ul li{
+        padding: 10px 10px;
+    } 
+    .logo{
+        font-size: 0.85em;
+    }
 }

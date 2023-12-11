@@ -50,3 +50,25 @@
     width: 500px;
     height: 500px;
 }
+
+@media (max-width: 800px) {
+    .about{
+        font-size: 1rem;
+        max-height: 100vh;
+        letter-spacing: 0.5px;
+    }
+
+    .intro h1{
+        font-size: 0.9em;
+    }
+
+    .intro p{
+        font-size: 0.75em;
+    }
+
+    .name {
+        font-size: 5em;
+    }
+
+}
+
