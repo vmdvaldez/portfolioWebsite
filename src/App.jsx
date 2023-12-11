@@ -14,7 +14,7 @@ function App() {
   const experienceRef = useRef(null);
   const projectRef = useRef(null);
   const contactRef = useRef(null);
-  const [dir, setDir] = useState("/");
+  const [dir, setDir] = useState("root@vmdvaldez:~/");
 
   
   const refs = {
