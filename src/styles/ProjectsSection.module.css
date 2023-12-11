@@ -149,4 +149,16 @@
     .description ul li{
         font-size: 0.65rem;
     }
+
+    .description div{
+        margin-right: 0px;
+    }
+
+    .links div{
+        max-height: 25px;
+    }
+
+    .links div a img{
+        max-height: 25px;
+    }
 }

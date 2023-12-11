@@ -14,7 +14,7 @@ export default function AboutMeSection({refProp}){
         const options ={
             root: null,
             rootMargin: "0px",
-            threshold: 0.8,
+            threshold: 0.7,
         }
 
         const observer = new IntersectionObserver((elem)=>{
