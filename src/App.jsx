@@ -58,10 +58,10 @@ function App() {
     <>
       <Navbar refs={refs} dir={dir}/>
       <AboutMeSection refProp={aboutMeRef}/>
-      <SkillsSection refProp={skillsRef}/>
-      <ExperienceSection refProp={experienceRef}/>
-      <ProjectsSection refProp={projectRef}/>
-      <ContactSection refProp={contactRef}/>
+      {/* <SkillsSection refProp={skillsRef}/> */}
+      {/* <ExperienceSection refProp={experienceRef}/> */}
+      {/* <ProjectsSection refProp={projectRef}/> */}
+      {/* <ContactSection refProp={contactRef}/> */}
     </>
   )
 }
