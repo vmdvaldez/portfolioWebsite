@@ -9,12 +9,12 @@ export default function Navbar({refs, dir}){
             <div className={styles.logo}>{dir}</div>
             <ul>
                 <a onClick={()=>{
-                    refs.about.current.scrollIntoView({block: 'center'});
+                    refs.about.current.scrollIntoView();
                     }}><li>About Me</li></a>
-                <a onClick={()=>{refs.skills.current.scrollIntoView({block: 'center'})}}><li>Skills</li></a>
-                <a onClick={()=>{refs.experience.current.scrollIntoView({block: 'center'})}}><li>Experience</li></a>
-                <a onClick={()=>{refs.project.current.scrollIntoView({block: 'center'})}}><li>Projects</li></a>
-                <a onClick={()=>refs.contact.current.scrollIntoView({block: 'center'})}><li>Contact</li></a>
+                <a onClick={()=>{refs.skills.current.scrollIntoView()}}><li>Skills</li></a>
+                <a onClick={()=>{refs.experience.current.scrollIntoView()}}><li>Experience</li></a>
+                <a onClick={()=>{refs.project.current.scrollIntoView()}}><li>Projects</li></a>
+                <a onClick={()=>refs.contact.current.scrollIntoView()}><li>Contact</li></a>
             </ul>
         </nav>
     )
