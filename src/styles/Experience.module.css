@@ -266,6 +266,6 @@
     .expDetailedIn .info h1,
     .expDetailedIn .info h2,
     .expDetailedIn .info h3 {
-    animation: none;
-}
+        animation: none;
+    }
 }
