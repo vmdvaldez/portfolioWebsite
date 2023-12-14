@@ -35,7 +35,7 @@ body{
 
 section {
   padding: var(--navbar-height) var(--section-Hpadding);
-  height: 100vh;
+  min-height: 100vh;
 
   scroll-snap-align: start;
   font-family: var(--font-styles);  
