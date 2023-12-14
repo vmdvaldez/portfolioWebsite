@@ -34,7 +34,7 @@ body{
 }
 
 section {
-  padding: var(--navbar-height) var(--section-Hpadding);
+  padding: calc(var(--navbar-height) + 2vh) var(--section-Hpadding);
   min-height: 100vh;
 
   scroll-snap-align: start;
