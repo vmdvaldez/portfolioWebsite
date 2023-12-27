@@ -132,15 +132,18 @@ export default function ProjectsSection({refProp}){
             desc: ["Designed a chat server using C++ via sockets",
                 "Users were allowed to create, join, and leave a chat-room",
                 "Implemented user simple user authentication and a time-out mechanism for idle users"
-                ]
+            ]
         },
         {
             index: 8,
             name: "Spotify Project",
-            github: "",
+            github: "https://github.com/vmdvaldez/spotify-web",
             img: "#",
             techStack: ["React", "CSS", "HTML"],
-            desc: ["OAuth", "API"]
+            desc: ["Utilize spotify web API with OAuth and retrieve spotify user information",
+                "Displays User Information: top artist, songs, and recently played", 
+                "Create artist page with artist information, albums, best tracks, and related artists"
+            ]
         }
     ]
 
